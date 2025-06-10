@@ -1,8 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
-import ListTabIcon from '../../assets/svg/list-tab-icon.svg';
 import HomeTabIcon from '../../assets/svg/home-tab-icon.svg';
+import ListTabIcon from '../../assets/svg/list-tab-icon.svg';
 import MapTabIcon from '../../assets/svg/map-tab-icon.svg';
 
 import { HapticTab } from '@/components/HapticTab';
@@ -15,10 +14,11 @@ export default function TabLayout() {
 
   return (
     <Tabs
+      initialRouteName="home-page"
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         tabBarStyle: {
           position: 'absolute',
           height: tab_icon_diameter + 59, // 52px icon + 16px padding
@@ -42,7 +42,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="index"
+        name="home-page"
         options={{
           tabBarIcon: ({ color }) => (
             <HomeTabIcon width={tab_icon_diameter} height={tab_icon_diameter} fill={color} />

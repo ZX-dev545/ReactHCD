@@ -1,0 +1,32 @@
+[
+    {
+        "name": "The Bloomin' Plague",
+        "description": "When your mentor vanishes, leaving behind only a cryptic note and a trail of clues, you must retrace his final steps through London's gardens and woods. As a mysterious illness erases people’s sense of direction, the key to the cure—a rare flower—lies hidden. Find the bloom. Trust no one. Time is running out.",
+        "questColour": 0,
+        "questIconSvgPath": "potted-plant-quest-icon.svg",
+        "progress": 0,
+        "locations": [
+            { "name": "Sydenham Hill Wood",    "latitude": 51.414988, "longitude": -0.060536 },
+            { "name": "Walpole Park",          "latitude": 51.542023, "longitude": -0.241667 },
+            { "name": "Barbican Conservatory", "latitude": 51.520250, "longitude": -0.093100 },
+            { "name": "Horniman Gardens",      "latitude": 51.456187, "longitude": -0.060827 },
+            { "name": "Kyoto Garden",          "latitude": 51.514573, "longitude": -0.159219 }
+        ]
+    },
+    {
+        "name": "Coming Soon",
+        "description": "...",
+        "questColour": 1,
+        "questIconSvgPath": "seagull-quest-icon.svg",
+        "progress": 0,
+        "locations": []
+    },
+    {
+        "name": "Coming Soon",
+        "description": "...",
+        "questColour": 2,
+        "questIconSvgPath": "virus-quest-icon.svg",
+        "progress": 0,
+        "locations": []
+    }
+]

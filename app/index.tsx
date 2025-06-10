@@ -1,28 +1,30 @@
+import { useRouter } from 'expo-router';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Pressable, StyleSheet, useWindowDimensions } from 'react-native';
 import InitialPageSvg from '../assets/svg/initial-page.svg';
 
 
-const InitialPage: React.FC = () => {
-    const navigate = useNavigate();
+export default function InitialPage() {
+  const router = useRouter();
+  const { width, height } = useWindowDimensions();
 
-    return (
-        <div
-            onClick={() => navigate('/signin-page')}
-            style={{
-                width: '100vw',
-                height: '100vh',
-                cursor: 'pointer',
-                overflow: 'hidden',
-            }}
-        >
-            <InitialPageSvg
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid slice"
-            />
-        </div>
-    );
-};
+  return (
+    <Pressable
+      style={styles.container}
+      onPress={() => router.push('/signin-page')}
+    >
+      <InitialPageSvg
+        width={width}
+        height={height}
+        preserveAspectRatio="xMidYMid slice"
+      />
+    </Pressable>
+  );
+}
 
-export default InitialPage;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#264156', // match the background color of the SVG
+  },
+});

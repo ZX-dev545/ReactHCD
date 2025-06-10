@@ -2,9 +2,19 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@utils/*": [
+        "utils/*"
       ]
     }
   },
@@ -14,6 +24,7 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "app/**/*",
-    "svg.d.ts"
+    "svg.d.ts", 
+    "types"  
   ]
 }

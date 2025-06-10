@@ -20,8 +20,12 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack
+        initialRouteName="index"               // start on index.tsx
+        screenOptions={{ headerShown: false, gestureEnabled: false }}>
+        <Stack.Screen name="index" />         
+        <Stack.Screen name="signin-page" />    
+        <Stack.Screen name="(tabs)" />         
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

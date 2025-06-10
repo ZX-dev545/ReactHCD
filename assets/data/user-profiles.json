@@ -1,0 +1,11 @@
+{
+    "default": {
+        "name": "Default User",
+        "city": "Unknown",
+        "avatar": "pigeon",
+        "accessories": [],
+        "quests": [
+            "The Bloomin' Plague"
+        ]
+    }
+}

@@ -6,6 +6,17 @@
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
+export const darkForeColour = '#264156';
+export const lightForeColour = '#FBF3D3';
+export const lightBackColour = '#68B0BA';
+export const darkBackColour = '#0E2435';
+export const questColours = ['#FDBE3D', '#EF9CA5', '#F76F1D'] 
+export const questColoursDark = ['#D99200', '#D15A67', '#B64400' ];
+export const questIconColours = ['#FFFFFF', '#FFCC00', '#FF7700', '#FF55B8', '#9955FF'];
+
+export const correctColour = '#007838'; // Green
+export const incorrectColour = '#C33231'; // Red
+
 export const Colors = {
   light: {
     text: '#11181C',
